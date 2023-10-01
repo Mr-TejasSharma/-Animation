@@ -3,3 +3,50 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-image: url(https://media.istockphoto.com/id/171151408/photo/colorado-landscape.jpg?s=612x612&w=0&k=20&c=UQtcdEp-XsCkMyy0ARXJTaTh7qaaLMQ38Ez-zNG_s3o=);
+    background-size: 1720px 580px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+}
+.road img{
+    height: 50vw;
+    width: 200vw;
+    z-index: 1;
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 1vw;
+    overflow: hidden;
+    animation: roadmove linear 0.5s infinite ;
+}
+@keyframes roadmove {
+    100%{
+        transform: translateX(-100vw);
+    }
+}
+
+
+.frame{
+    z-index: 2;
+    height: 15vw;
+    position: absolute;
+    top: 25vw;
+    left: 20vw;
+}
+.wheel1,.wheel2{
+    height: 8vw;
+    z-index: 2;
+    position: relative;
+    top: 31.5vw;
+    left: 22.2vw;
+    animation: wheelmove linear 0.5s infinite;
+}
+.wheel2{
+    left: 32vw;
+}
+@keyframes wheelmove {
+    100%{
+        transform: rotate(360deg);
+    }
+}
