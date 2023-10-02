@@ -48,11 +48,6 @@ background-color: black;
 .moon{
     display: none;
 }
-h1{
-    z-index: 5;
-    font-size: 10px;
-    color: #000;
-}
 .road img{
     height: 56.5vw;
     width: 300vw;
@@ -102,8 +97,8 @@ h1{
     height: 8vw;
     z-index: 2;
     position: relative;
-    top: 28vw;
-    left: 33.2vw;
+    top: 27.5vw;
+    left: 32.5vw;
     transition: all ease 1s;
 
 }
