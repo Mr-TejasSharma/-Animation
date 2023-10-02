@@ -8,11 +8,11 @@ background-color: black;
  overflow: hidden;
 }
 .back img{
-    height: 100%;
+    height: 100vh;
     width: 300%;
     position: absolute;
     background-repeat: repeat-x;
-    top: 0vw;
+    top: -10rem;
     animation: backmove linear 50s infinite;
 }
 @keyframes backmove {
@@ -37,6 +37,22 @@ background-color: black;
 .switchD:hover{
     box-shadow: 0 0 10px 10px rgb(159, 207, 255);
 }
+.sun,.moon{
+    border-radius:50px ;
+    position: absolute;
+    top: 5vw;
+    left: 85vw;
+    height: 10vw;
+    z-index: 4;
+}
+.moon{
+    display: none;
+}
+h1{
+    z-index: 5;
+    font-size: 10px;
+    color: #000;
+}
 .road img{
     height: 56.5vw;
     width: 300vw;
@@ -45,6 +61,8 @@ background-color: black;
     position: absolute;
     overflow: hidden;
     animation: roadmove linear 1s infinite ;
+    transition: all ease 1s;
+
 }
 @keyframes roadmove {
     100%{
@@ -58,7 +76,7 @@ background-color: black;
     height: 15vw;
     position: absolute;
     top: 29.5vw;
-    left: 15vw;
+    left: 5vw;
     transition: all ease 1s;
 }
 .wheel1,.wheel2{
@@ -66,12 +84,12 @@ background-color: black;
     z-index: 2;
     position: relative;
     top: 36vw;
-    left: 17.2vw;
+    left: 7.2vw;
     animation: wheelmove linear 0.8s infinite;
     transition: all ease 1s;
 }
 .wheel2{
-    left: 27vw;
+    left: 17vw;
 }
 @keyframes wheelmove {
     100%{
@@ -85,7 +103,7 @@ background-color: black;
     z-index: 2;
     position: relative;
     top: 28vw;
-    left: 43.2vw;
+    left: 33.2vw;
     transition: all ease 1s;
 
 }
