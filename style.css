@@ -4,8 +4,28 @@
     box-sizing: border-box;
 }
 body{
-background-color: black;
- overflow: hidden;
+    background-color: black;
+    overflow: hidden;
+}
+.open span,.open ol{
+    mix-blend-mode:difference;
+    font-size: 50px;
+    color: #29e2cf;
+    position: absolute;
+    top: 1vw;
+    left: 15vw;
+    z-index: 5;
+}
+.open ol{
+    left: 35vw;
+    color: rgb(242, 174, 47);
+    top: 20vw;
+}
+.logo{
+    height: 5vw;
+}
+.game{
+    display: none;
 }
 .back img{
     height: 100vh;
